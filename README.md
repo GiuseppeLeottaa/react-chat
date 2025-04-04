@@ -160,3 +160,4 @@ yarn local
 ```
 
 Once the server is running it should automatically open your browser with the chat widget.
+# react-chat-custom
