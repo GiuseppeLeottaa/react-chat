@@ -65,11 +65,11 @@ const Footer: React.FC<FooterProps> = ({
   return (
     <Container withShadow={!!hasEnded} withWatermark={withWatermark}>
       {hasEnded ? (
-        <Button onClick={onStart}>Start New Chat</Button>
+        <Button onClick={onStart}>Inizia nuova chat</Button>
       ) : (
         <ChatInput
           value={message}
-          placeholder="Message…"
+          placeholder="Scrivi qualcosa"
           autoFocus
           onValueChange={setMessage}
           onSend={handleSend}
@@ -80,9 +80,9 @@ const Footer: React.FC<FooterProps> = ({
       )}
       {withWatermark && (
         <Watermark>
-          Assistant ⚡️ by
-          <a target="_blank" href="https://voiceflow.com" rel="noreferrer">
-            Voiceflow
+          Powered by
+          <a target="_blank" href="https://leobelagency.com" rel="noreferrer">
+            Leobelagency
           </a>
         </Watermark>
       )}
